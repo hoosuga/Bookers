@@ -39,7 +39,7 @@ h1 {
   font-weight: bold;
 }
 
-.show {
+.show ,.text-success {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -55,17 +55,6 @@ p {
   margin: 33px;
 }
 
-/*table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: gray;
-  margin-top: 0;
-  padding-top: 0;
-}
-*/
 thead {
   display: table-header-group;
   vertical-align: middle;
@@ -144,4 +133,8 @@ input {
 
 textarea {
   display: block;
+}
+
+.text-success {
+  color: green;
 }

@@ -13,14 +13,14 @@
        <td><%= book.body %></td>
        <td><%= link_to "Show", book_path(book.id), class:"cursor" %></td>
        <td><%= link_to "Edit", edit_book_path(book.id), class:"cursor" %></td>
-       <td><%= link_to "Destroy", book_path(book.id), class:"cursor", method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
+       <td><%= link_to "Destroy", book_path(book.id), class:"cursor", method: :delete, "data-confirm" => "Are you sure?" %></td>
      </tr>
     <% end %>
   </tbody>
 </table>
 
 <h2>New book</h2>
-<%= form_with model: @book, url: '/books', method: :post do |f| %>
+<%= form_with model: @book, method: :post do |f| %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>

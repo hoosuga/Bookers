@@ -9,19 +9,19 @@
         <li><%= message %></li>
       <% end %>
     </ul>
-  <% end %>
 </div>
-<%= form_with model: @book, url:book_path(@book.id), method: :patch do |f| %>
+  <% end %>
+<%= form_with model: @book, url:book_path(@book.id) do |f| %>
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label :title, "Title" %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :body %>
+    <%= f.label :body, "Body" %>
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.submit 'Update Book' %>
+    <%= f.submit "Update Book" %>
   </div>
 <% end %>
 

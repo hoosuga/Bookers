@@ -34,11 +34,10 @@
     </ul>
   <% end %>
 </div>
-
 <%= form_with model: @book, method: :post do |f| %>
   <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
   </div>
   <div class="field">
     <%= f.label :body %>
